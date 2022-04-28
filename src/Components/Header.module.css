@@ -1,0 +1,17 @@
+.header {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header li {
+  margin-right: 0.625em;
+  padding: .75em 2em;
+  background: #2E3138;
+  border-radius: 4px 4px 0 0 ;
+}
+
+ .header li.active {
+  background: #4D505B;
+}
