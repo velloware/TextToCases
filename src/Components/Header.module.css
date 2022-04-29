@@ -7,11 +7,26 @@
 
 .header li {
   margin-right: 0.625em;
-  padding: .75em 2em;
   background: #2E3138;
+  padding: .5rem;
+  font-weight: normal;
   border-radius: 4px 4px 0 0 ;
+  font-size: 1rem;
+  box-shadow: 2px 1px 4px #2E3138;
+}
+.header li.active {
+ background: #4D505B;
 }
 
- .header li.active {
-  background: #4D505B;
+.header li:hover,
+.header li:focus {
+  cursor: pointer;
+  background-color: #2B5AB5;
+}
+
+
+@media (max-width:600px) {
+  .header li {
+    font-size: .8rem;
+  }
 }
