@@ -1,20 +1,42 @@
 .textToCases {
   background: #2E3138;
-  margin: 0;
-  min-width: 55vw;
-  border-top: 4px solid #E6E6E6;
+  margin: -3px auto;
+  z-index: 1;
+  position: relative;
+  max-width: 55vw;
+  border-top: 6px solid #2B5AB5;
   min-height: 70vh;
   border-radius: 4px;
   padding: 0 2em;
+  box-shadow: 2px 1px 4px #2E3138;
 }
 
 .textToCases h1 {
-  padding: .5em 0;
+  padding: .5rem 0;
 }
 
 .textToCases textarea {
   width: 100%;
-  height: 13em;
-  margin: 2em 0;
+  height: 13rem;
+  margin: 2rem 0;
   resize: vertical;
-} 
+  background-color: #E1E4EA;
+  border-radius: 4px;
+  box-shadow: 2px 1px 4px #2E3138;
+  color: #222;
+  font-size: 1rem;
+  border: 0px solid;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+@media (max-width:600px) {
+  .textToCases {
+    max-width: 95vw;
+    padding: 0 1em;
+  }
+}

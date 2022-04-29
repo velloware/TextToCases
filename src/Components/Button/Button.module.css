@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  font-size: .7rem;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: .3rem .45rem;
+  text-align: center;
+  background-color: #22468E;
+  color: #E1E4EA;
+  margin-right: .5rem;
+  box-shadow: 2px 1px 4px #2E3138;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: #2B5AB5;
+}
