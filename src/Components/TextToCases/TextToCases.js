@@ -16,7 +16,6 @@ const TextToCases = () => {
         <Button action={[ToCases.LowerCase, ID_TEXT_AREA] }>lower case</Button>
         <Button action={[ToCases.SentenceCase, ID_TEXT_AREA] }>Sentece case</Button>
         <Button action={[ToCases.TitleCase, ID_TEXT_AREA] }>Title case</Button>
-        <Button action={[ToCases.CapitalizeWord, ID_TEXT_AREA] }>Capitalize Word</Button>
         <Button action={[ToCases.ToggleCase, ID_TEXT_AREA] }>Togle Case</Button>
         <Button action={[ToCases.AlternativeCase, ID_TEXT_AREA] }>AlTeRnAtIvE cAsE</Button>
       </div>
