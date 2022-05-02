@@ -6,8 +6,8 @@ const Header = () => {
     <header>
       <ul className={ styles.header }>
         <li className={ styles.active }>TextToCases</li>
-        <li>TextToHash</li>
-        <li>TextToCodes</li>
+        {/* <li>TextToHash</li> */}
+        {/* <li>TextToCodes</li> */}
       </ul>
     </header>
   )

@@ -2,15 +2,19 @@ import React from 'react';
 import Button from '../Button/Button';
 import styles from './TextToCases.module.css';
 import ToCases from '../../Classes/ToCases';
+import copy from "../../assets/img/copy.png";
+import clear from "../../assets/img/clear.png";
+import Actions from '../../Classes/Actions';
 
 const TextToCases = () => {
-    const ID_TEXT_AREA = "#texttocases";
+  const ID_TEXT_AREA = "#texttocases";
+
   return (
     <main className={ styles.textToCases }>
       <h1 className={ 'title' }> Text<span className={'titleAux'}>ToCases</span></h1>
       <p>Seu conversor de texto para usar naqulele momento em que o capslock estava ligado e aquele seu email de mil palavras foi escrito todo em  maiúsculo</p>
 
-      <textarea id='texttocases'></textarea>
+      <textarea id='texttocases' spellcheck="false"></textarea>
       <div className={ styles.buttons }>
         <Button action={[ToCases.UpperCase, ID_TEXT_AREA] }>UPPER CASE</Button>
         <Button action={[ToCases.LowerCase, ID_TEXT_AREA] }>lower case</Button>
@@ -18,6 +22,18 @@ const TextToCases = () => {
         <Button action={[ToCases.TitleCase, ID_TEXT_AREA] }>Title case</Button>
         <Button action={[ToCases.ToggleCase, ID_TEXT_AREA] }>Togle Case</Button>
         <Button action={[ToCases.AlternativeCase, ID_TEXT_AREA] }>AlTeRnAtIvE cAsE</Button>
+
+        <button 
+          className={ styles.button }
+          onClick={ () => Actions.copy(ID_TEXT_AREA) }
+        >
+          <img alt='copy' src={ copy }/>
+        </button>
+        <button 
+          className={ `${ styles.button } ${ styles.button_clear }` } 
+          onClick={ () => Actions.clear(ID_TEXT_AREA)} >
+          <img alt='clear' src={ clear }/>
+        </button>
       </div>
     </main>
   );
