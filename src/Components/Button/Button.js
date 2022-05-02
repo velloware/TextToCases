@@ -1,5 +1,5 @@
 import React from 'react';
-import Action from '../../Classes/Action';
+import Action from '../../Classes/Actions';
 import styles from './Button.module.css';
 
 const Button = (props) => {

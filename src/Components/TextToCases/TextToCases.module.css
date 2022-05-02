@@ -34,6 +34,38 @@
   padding-bottom: 1rem;
 }
 
+.button {
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #22468E;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 1px 4px #2E3138;
+  max-width: 35px;
+  margin-right: 5px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #2B5AB5;
+}
+
+.button img {
+  margin-top: 7px;
+  margin-left: 1px;
+  width: 30px;
+  height: 26px;
+}
+
+.button_clear img {
+  width: 20px;
+  padding: 3px;
+  height: 18px;
+  margin-top: 0px;
+  padding:  .1px;
+}
 @media (max-width:600px) {
   .textToCases {
     max-width: 95vw;
