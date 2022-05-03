@@ -5,7 +5,9 @@ import ToCases from '../../Classes/ToCases';
 import copy from "../../assets/img/copy.png";
 import clear from "../../assets/img/clear.png";
 import Actions from '../../Classes/Actions';
-
+import { AiOutlineClear } from 'react-icons/ai';
+import { MdOutlineContentCopy } from 'react-icons/md';
+ 
 const TextToCases = () => {
   const ID_TEXT_AREA = "#texttocases";
 
@@ -23,17 +25,17 @@ const TextToCases = () => {
         <Button action={[ToCases.ToggleCase, ID_TEXT_AREA] }>Togle Case</Button>
         <Button action={[ToCases.AlternativeCase, ID_TEXT_AREA] }>AlTeRnAtIvE cAsE</Button>
 
-        <button 
-          className={ styles.button }
-          onClick={ () => Actions.copy(ID_TEXT_AREA) }
+        <Button 
+          icon={AiOutlineClear}
+          copy={true}
+          action={[Actions.copy, ID_TEXT_AREA] }
+        ></Button>
+        <Button
+          icon={MdOutlineContentCopy}
+          clear={true}
+          action={[Actions.clear, ID_TEXT_AREA] }
         >
-          <img alt='copy' src={ copy }/>
-        </button>
-        <button 
-          className={ `${ styles.button } ${ styles.button_clear }` } 
-          onClick={ () => Actions.clear(ID_TEXT_AREA)} >
-          <img alt='clear' src={ clear }/>
-        </button>
+        </Button>
       </div>
     </main>
   );
