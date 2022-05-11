@@ -66,6 +66,27 @@
   margin-top: 0px;
   padding:  .1px;
 }
+
+section {
+  margin-top: 10vh;
+  color:#222;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+section span {
+  font-size: 1.3rem;
+}
+section h1 {
+  padding: 2rem 0 ;
+  font-size: 1.9rem;
+}
+
+section h2 {
+  padding: 3rem;
+
+}
+
 @media (max-width:600px) {
   .textToCases {
     max-width: 95vw;

@@ -3,6 +3,7 @@ import TextToCases from './Components/TextToCases/TextToCases';
 import Header from './Components/Header';
 import './App.css';
 import React from 'react';
+import Footer from './Components/Footer';
 
  
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <div className={ `animeLeft container` }>
       <Header />
       <TextToCases /> 
+      <Footer />
     </div>
   );
 }
