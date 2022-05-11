@@ -24,15 +24,16 @@ const TextToCases = () => {
         <Button action={[ToCases.ToggleCase, ID_TEXT_AREA] }>Togle Case</Button>
         <Button action={[ToCases.AlternativeCase, ID_TEXT_AREA] }>AlTeRnAtIvE cAsE</Button>
 
-        <Button 
-          icon={AiOutlineClear}
-          copy={true}
-          action={[Actions.copy, ID_TEXT_AREA] }
-        ></Button>
         <Button
           icon={MdOutlineContentCopy}
-          clear={true}
+          copy={true}
           action={[Actions.clear, ID_TEXT_AREA] }
+        >
+        </Button>
+        <Button 
+          icon={AiOutlineClear}
+          clear={true}
+          action={[Actions.copy, ID_TEXT_AREA] }
         >
         </Button>
       </div>

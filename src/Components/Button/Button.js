@@ -22,7 +22,7 @@ const Button = (props) => {
       className={ styles.button } 
       onClick={ execute }
     >
-    {props.icon && <props.icon size={20}/>}
+    {props.icon && <props.icon size={22}/>}
     { props.children }
     </button>
   );
