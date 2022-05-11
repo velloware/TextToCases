@@ -52,7 +52,7 @@ const TextToCases = () => {
         <p>Sentence cases can be part of a report, webpage, article, or another piece of work. Keep in mind that in addition to titles, sentence case rules can apply to subtitles, headings, and subheadings. When you use a sentence case, you capitalize just the first letter of the first word in the title.</p>
 
         <h2>Title case</h2>
-        <p>Title case or headline case is a style of capitalization used for rendering the titles of published works or works of art in English. When using title case, all words are capitalized except for minor words unless they are the first or last word of the title</p>
+        <p>Title case or headline case is a style of capitalization used for rendering the titles of published works or works of art in English. When using title case, all words are capitalized except for minor words unless they are the first or last word of the title.</p>
 
         <h2>Toggle Case</h2>
         <p>ToggleCase is text that is converted to a mixed case version of the text. For instance, the word "dictionary" could be converted into "dIctIOnAry". Related information. Use the online text converter to convert your text to uppercase, lowercase, ToggleCase, and other modifications. Case, Toggle, Typography terms. Was this page useful?</p>
