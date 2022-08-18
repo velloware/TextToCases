@@ -4,7 +4,6 @@ import Header from './Components/Header';
 import './App.css';
 import React from 'react';
 import Footer from './Components/Footer';
-
  
 const App = () => {
   return (
